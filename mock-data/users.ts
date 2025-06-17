@@ -1,0 +1,171 @@
+export interface User {
+   id: string;
+   name: string;
+   avatarUrl: string;
+   email: string;
+   status: 'online' | 'offline' | 'away';
+   role: 'Member' | 'Admin' | 'Guest';
+   joinedDate: string;
+   teamIds: string[];
+}
+
+const avatarUrl = (seed: string) => `https://api.dicebear.com/9.x/glass/svg?seed=${seed}`;
+
+export const statusUserColors = {
+   online: '#00cc66',
+   offline: '#969696',
+   away: '#ffcc00',
+};
+
+export const users: User[] = [
+   {
+      id: 'ph',
+      name: 'philip.josiah',
+      avatarUrl: avatarUrl('ph'),
+      email: 'philipjosiah9@gmail.com',
+      status: 'online',
+      role: 'Admin',
+      joinedDate: '2022-01-01',
+      teamIds: ['DESIGN', 'CLOUD', 'AI'],
+   },
+   {
+      id: 'liam',
+      name: 'liam.smith',
+      avatarUrl: avatarUrl('liamsmith'),
+      email: 'liamsmith@gmail.com',
+      status: 'offline',
+      role: 'Admin',
+      joinedDate: '2023-06-04',
+      teamIds: ['CLOUD', 'INFO_SECURITY' ],
+   },
+   {
+      id: 'julia',
+      name: 'julia.williams',
+      avatarUrl: avatarUrl('juliawilliams'),
+      email: '',
+      status: 'away',
+      role: 'Member',
+      joinedDate: '2023-11-01',
+      teamIds: ['DESIGN', 'AI', 'ST'],
+   },
+   {
+      id: 'kevin',
+      name: 'kevin.johnson',
+      avatarUrl: avatarUrl('kevinjohnson'),
+      email: 'kevinjohnson3@gmail.com',
+      status: 'online',
+      role: 'Member',
+      joinedDate: '2023-03-20',
+      teamIds: ['ST'],
+   },
+   {
+      id: 'alex',
+      name: 'alex.zhang',
+      avatarUrl: avatarUrl('alexzhang'),
+      email: 'alexzhang@gmail.com',
+      status: 'online',
+      role: 'Member',
+      joinedDate: '2023-05-15',
+      teamIds: ['DESIGN', 'PERF'],
+   },
+   {
+      id: 'olivia',
+      name: 'olivia.wilson',
+      avatarUrl: avatarUrl('oliviawilson'),
+      email: 'oliviawilson@gmail.com',
+      status: 'offline',
+      role: 'Admin',
+      joinedDate: '2022-08-22',
+      teamIds: ['PERF'],
+   },
+   {
+      id: 'lucas',
+      name: 'lucas.martin',
+      avatarUrl: avatarUrl('lucasmartin'),
+      email: 'lucasmartin@gmail.com',
+      status: 'away',
+      role: 'Member',
+      joinedDate: '2023-02-14',
+      teamIds: ['CORE', 'DESIGN', 'PERF'],
+   },
+   {
+      id: 'isabella',
+      name: 'isabella.garcia',
+      avatarUrl: avatarUrl('isabellagarcia'),
+      email: 'isabellagarcia@gmail.com',
+      status: 'online',
+      role: 'Member',
+      joinedDate: '2022-11-30',
+      teamIds: ['DESIGN'],
+   },
+   {
+      id: 'ethan',
+      name: 'ethan.brown',
+      avatarUrl: avatarUrl('ethanbrown'),
+      email: 'ethanbrown@gmail.com',
+      status: 'offline',
+      role: 'Member',
+      joinedDate: '2023-07-18',
+      teamIds: ['PERF'],
+   },
+   {
+      id: 'amelia',
+      name: 'amelia.kim',
+      avatarUrl: avatarUrl('ameliakim'),
+      email: 'ameliakim@gmail.com',
+      status: 'online',
+      role: 'Guest',
+      joinedDate: '2022-05-09',
+      teamIds: ['DESIGN'],
+   },
+   {
+      id: 'melissa',
+      name: 'melissa.wright',
+      avatarUrl: avatarUrl('melissawright'),
+      email: 'melissawright@gmail.com',
+      status: 'away',
+      role: 'Member',
+      joinedDate: '2023-09-27',
+      teamIds: ['AI', 'DESIGN', 'PRODUCT'],
+   },
+   {
+      id: 'herman',
+      name: 'herman.miller',
+      avatarUrl: avatarUrl('hermanemiller'),
+      email: 'hermanmiller@gmail.com',
+      status: 'online',
+      role: 'Guest',
+      joinedDate: '2022-04-03',
+      teamIds: ['DEVOPS', 'AI', 'ST'],
+   },
+   {
+      id: 'aiden',
+      name: 'aiden.bai',
+      avatarUrl: avatarUrl('aidenbai'),
+      email: 'aidenthompson@gmail.com',
+      status: 'offline',
+      role: 'Admin',
+      joinedDate: '2023-01-12',
+      teamIds: ['DESIGN'],
+   },
+   {
+      id: 'kai',
+      name: 'kai.cenat',
+      avatarUrl: avatarUrl('kaicenat'),
+      email: 'kaicenat@gmail.com',
+      status: 'online',
+      role: 'Member',
+      joinedDate: '2022-10-05',
+      teamIds: ['DESIGN', 'SALES'],
+   },
+   {
+      id: 'jacob',
+      name: 'jacob.stevens',
+      avatarUrl: avatarUrl('jacobstevens'),
+      email: 'jacobstevens@gmail.com',
+      status: 'away',
+      role: 'Guest',
+      joinedDate: '2022-12-08',
+      teamIds: ['DESIGN', 'FRONTEND','PRODUCT'],
+   },
+];
