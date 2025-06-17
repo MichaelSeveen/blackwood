@@ -106,7 +106,7 @@ export function AssigneeSelector({ assignee, onChange }: AssigneeSelectorProps) 
                            </span>
                         </CommandItem>
                         {users
-                           .filter((user) => user.teamIds.includes('CORE'))
+                           .filter((user) => user.teamIds.includes('DESIGN'))
                            .map((user) => (
                               <CommandItem
                                  key={user.id}

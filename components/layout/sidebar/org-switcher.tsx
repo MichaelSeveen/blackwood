@@ -21,6 +21,7 @@ import { SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui
 import { CreateNewIssue } from './create-new-issue';
 import { ThemeToggle } from '../theme-toggle';
 import Link from 'next/link';
+import AppIcon from '@/components/custom-icons/app-icon';
 
 export function OrgSwitcher() {
    return (
@@ -33,9 +34,7 @@ export function OrgSwitcher() {
                         size="lg"
                         className="h-8 p-1 data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
                      >
-                        <div className="flex aspect-square size-6 items-center justify-center rounded bg-orange-500 text-sidebar-primary-foreground">
-                           BW
-                        </div>
+                        <AppIcon />
                         <div className="grid flex-1 text-left text-sm leading-tight">
                            <span className="truncate font-semibold">Blackwood</span>
                         </div>

@@ -190,7 +190,7 @@ export function IssueContextMenu({ issueId }: IssueContextMenuProps) {
                      <User className="size-4" /> Unassigned
                   </ContextMenuItem>
                   {users
-                     .filter((user) => user.teamIds.includes('CORE'))
+                     .filter((user) => user.teamIds.includes('DESIGN'))
                      .map((user) => (
                         <ContextMenuItem
                            key={user.id}

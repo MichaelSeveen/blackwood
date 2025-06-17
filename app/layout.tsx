@@ -13,14 +13,13 @@ const geistMono = Geist_Mono({
    subsets: ['latin'],
 });
 
-
 export const metadata: Metadata = {
    title: {
       template: '%s | Blackwood - Project Management',
       default: 'Blackwood - Project Management',
    },
    description:
-      'Project management interface inspired by Linear. Built with Next.js and shadcn/ui, this application allows tracking of issues, projects and teams with a modern, responsive UI.'
+      'Project management interface built with Next.js and shadcn/ui, this application allows tracking of issues, projects and teams with a modern, responsive UI.',
 };
 
 import { ThemeProvider } from '@/components/layout/theme-provider';

@@ -36,7 +36,7 @@ export const users: User[] = [
       status: 'offline',
       role: 'Admin',
       joinedDate: '2023-06-04',
-      teamIds: ['CLOUD', 'INFO_SECURITY' ],
+      teamIds: ['CLOUD', 'INFO_SECURITY'],
    },
    {
       id: 'julia',
@@ -86,7 +86,7 @@ export const users: User[] = [
       status: 'away',
       role: 'Member',
       joinedDate: '2023-02-14',
-      teamIds: ['CORE', 'DESIGN', 'PERF'],
+      teamIds: ['AI', 'DESIGN', 'SALES'],
    },
    {
       id: 'isabella',
@@ -106,7 +106,7 @@ export const users: User[] = [
       status: 'offline',
       role: 'Member',
       joinedDate: '2023-07-18',
-      teamIds: ['PERF'],
+      teamIds: ['DEVOPS', 'AI', 'ST', 'DESIGN'],
    },
    {
       id: 'amelia',
@@ -166,6 +166,6 @@ export const users: User[] = [
       status: 'away',
       role: 'Guest',
       joinedDate: '2022-12-08',
-      teamIds: ['DESIGN', 'FRONTEND','PRODUCT'],
+      teamIds: ['DESIGN', 'FRONTEND', 'PRODUCT'],
    },
 ];

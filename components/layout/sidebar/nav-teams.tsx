@@ -101,7 +101,7 @@ export function NavTeams() {
                         <SidebarMenuSub>
                            <SidebarMenuSubItem>
                               <SidebarMenuSubButton asChild>
-                                 <Link href="/blackwood/team/CORE/all">
+                                 <Link href="/blackwood/team/DESIGN/all">
                                     <CopyMinus size={14} />
                                     <span>Issues</span>
                                  </Link>
@@ -109,7 +109,7 @@ export function NavTeams() {
                            </SidebarMenuSubItem>
                            <SidebarMenuSubItem>
                               <SidebarMenuSubButton asChild>
-                                 <Link href="/blackwood/team/CORE/all">
+                                 <Link href="/blackwood/team/DESIGN/all">
                                     <RiDonutChartFill size={14} />
                                     <span>Cycles</span>
                                  </Link>
